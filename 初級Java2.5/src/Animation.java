@@ -3,7 +3,8 @@ public class Animation extends MyFrame {
 	public void run() {
 		int y=100;
 		int x=30;
-		while(true) {
+		int cnt=0;
+		while(cnt<3) {
 			while(x<=170) {
 				clear();
 				setColor(0,128,0);
@@ -18,6 +19,7 @@ public class Animation extends MyFrame {
 				x-=5;
 				sleep(0.1);
 			}
+			cnt++;
 		}
 	}
 
